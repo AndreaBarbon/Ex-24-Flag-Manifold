@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.9.30)  17 APR 2012 15:35
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.9.30)  17 APR 2012 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,7 +595,7 @@ Package minitoc(hints) Info: I0019
 Here is how much of TeX's memory you used:
  5845 strings out of 493747
  76890 string characters out of 3143546
- 148290 words of memory out of 3000000
+ 149290 words of memory out of 3000000
  8817 multiletter control sequences out of 15000+200000
  18749 words of font info for 57 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -615,7 +615,7 @@ b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
 usr/local/texlive/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></us
 r/local/texlive/2010/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on "Ex 24 - Flag manifold.pdf" (2 pages, 127881 bytes).
+Output written on "Ex 24 - Flag manifold.pdf" (2 pages, 130758 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
