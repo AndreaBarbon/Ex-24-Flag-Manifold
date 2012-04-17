@@ -71,6 +71,8 @@
 \newcommand{\RT}{\rho_2(A)}
 \newcommand{\aplh}{(1-\alpha)}
 \newcommand{\Ad}{\ker\text{Ad}}
+\newcommand{\F}{\mathpzc{F}}
+
 
 
 % Ambienti
@@ -113,8 +115,15 @@ We can give $\mathpzc{F}$ a group structure by declaring $ \phi(g) \star \phi(h)
 
 
 \section{Part D}
+To see tht $\phi(K)=\mathpzc{F}$ we look at what we did in Part A, and we observe that using the Grant-Schmidt process we can make all the $e_j$ and the $f_j$ orthonormal, thus making $g$ an orthogonal tranformation. Hence $\forall F \in \mathpzc{F}$ we can find a map $g\in K$ s.t. $\phi(g)=F$, or in other word $\phi(K)=\mathpzc{F}$. \\
+From above it follows that the action of $K$ on $\mathpzc{F}$ is transitive, and it is clear that $ H = \text{ker}(\phi_{|K}) = K_E $. Hence we can apply Proposition 15.5 the get the desired diffeomorphism.\\
+Finally we know that $K$ is compact and so it is its quotient $K/H$. Therefore $\F$ is compact.
 
-In view of \emph{Lemma 11.8}, the condition $(b)$ of \emph{Definition 12.2} is equivalent to the quotient $A / M$ being Hausdorff. In item $(c)$ we showed that this is not the case, hence the action of $A$ on $M$ is not of principal fiber bundle type. 
+\section{Part E}
+
+\section{Part F}
+Consider the set $ D=\{d\in\mathpzc{F} \mid d=(k,n-k)\} $, and define the map $$ \psi:D\to G_{n,k}(\mathbb{K}), \qquad d\mapsto F_1. $$ $\psi$ is surjective because $F_1$ can be any linear subspace of dimension $k$, and it is aswell injective because $F_2 = \mathbb{K}^n, F_0 = {0} $ and $F_1=F_1' \implies d=d'$.We covered the general case of $G_{n,k}(\mathbb{K})$, and the projective space is just the special case with $k=1$. 
+
 
 
 
