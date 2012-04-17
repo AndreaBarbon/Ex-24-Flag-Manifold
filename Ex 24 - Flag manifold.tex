@@ -101,30 +101,12 @@
 \section{Part A}
 Let $E,F \in \mathpzc{F} $. We can find some linear basis $e_j,f_j$ s.t. 
 $$ E_j = \text{span}(e_j) \AND F_j = \text{span}(f_j) $$
-and the map $ g $ defined by $e_j \mapsto \f_j$ is an element of $G$, and has the property that $ g\cdot E=F $. We therefore see that the action of $\alpha$ is transitive.
+and the map $ g $ defined by $e_j \mapsto f_j$ is an element of $G$, and has the property that $ g\cdot E=F $. We therefore see that the action of $\alpha$ is transitive.
 
 \section{Part B}
-Let $m=(m_1,m_2) \in M$. Since $M$ does not contain the origin, we can assume $m_1 \neq 0$ (if $m_1=0$ than $m_2 \neq 0$, and we can just interchange the names of $m_1$ and $m_2$). We will prove that there exists an $A$-invariant neighborhood $U$ of $m$ such that the restriction of the map $$ \varphi:M\times A \to M\times M, \qquad ((m_1,m_2),t) \mapsto ((m_1,m_2),(e^tm_1,e^{-t}m_2)) $$ to $U\times A$ is proper. We can define $U$ as following
-$$ U:= \begin{cases}
-	\quad ]0,+\infty[\;\times\;]-\infty,+\infty[ &\text{if} \quad m_1 > 0 \\
-	\quad ]-\infty,0[\;\times\;]-\infty,+\infty[ &\text{if} \quad m_1 < 0 \\	
-\end{cases} $$
-and it is clear that such set is an open neighborhood of $m$ and it is invariant under the action of $A$. We can now define the map $$\psi:U\times U \to U\times A, \qquad ((m_1,m_2), (x,y)) \mapsto ((m_1,m_2), \log(|x|)-\log(|m_1|)) $$ which is well-defined, because $m_1 \neq 0$ and $x \neq 0$. We easily see that this is a local inverse of $\varphi_{| U\times A}$, infact we have 
-\begin{eqnarray*}
-	\psi\circ\varphi((m_1,m_2),t) &=& \psi((m_1,m_2),(e^tm_1,e^{-t}m_2)) \\\\ 
-	&=& ((m_1,m_2),\log(|e^tm_1|)-\log(|m_1|)) \qquad\qquad \text{since}\quad e^t>0 \\\\
-	&=& ((m_1,m_2),\log(e^t|m_1|)-\log(|m_1|)) \\\\
-	&=& ((m_1,m_2),\log(e^t)+\log(|m_1|)-\log(|m_1|)) \\\\
-	&=& ((m_1,m_2),\log(e^t)) \\\\
-	&=& ((m_1,m_2),t) \\\\
-\end{eqnarray*}
-and, restricing to the image $\varphi(U\times A)$,
-\begin{eqnarray*}
-	\varphi\circ\psi((m_1,m_2),(e^tm_1,e^{-t}m_2)) &=& \varphi((m_1,m_2),\log(|e^tm_1|)-\log(|m_1|)) \\\\ 
-	&=& \varphi((m_1,m_2),t) \\\\
-	&=& ((m_1,m_2),(e^tm_1,e^{-t}m_2)).
-\end{eqnarray*}
-Hence we see that $\varphi_{| U\times A}$ has a continuous inverse, which maps compact sets to compact sets. We therefore conclude that $\varphi_{| U\times A}$ is proper. Moreover from \emph{Part A} we know that the action is free, so by \emph{Theorem 13.5} we conclude that the restriction of $A$ to $U$ is of principal fiber bundle type.
+From what we saw in Part A it is clear that the stabilizer is given by $$ P=\{ \text{diag}(M_j) \mid M_j \in \text{GL}(d_j,\mathbb{K}), j=1,\dots,k \}. $$
+Using the trivial global chart $\chi:\mathbb{R}^{n^2}\toG$ of $G$ one can see (after a rearranging of the basis of $\mathbb{R}^{n^2}$) that $P$ can be described by $$ P=\chi(\mathbb{R}^{n^2} \cup \{x_1=\dots=x_l=0\}) $$ where the coordinates set to zero are the ones outside the diagonal blocks. It follows by definition that $P$ is a submanifold of $G$, and applying Theorem 9.1 we conclude that $P$ is a closed subset of $G$. Obviously $P$ is a subgroup of $G$, hence a closed subgroup as required.
+
 
 \section{Part C}
 Consider the compact set $\{ (m_1, 0) \} \subset M $, where $m_1 \neq 0$. It's easy to see that the set $$ A \cdot C = \{(e^t m_1,0) \mid t\in A\} = \{(x,0) \mid x\in \mathbb{R}_{>0} \} $$ is not closed. $M$ is locally compact, so we can apply \emph{lemma 11.8} and conclude that the quotient topology $A / M$ is not Hausdorff.
